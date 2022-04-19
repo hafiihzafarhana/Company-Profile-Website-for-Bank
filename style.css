@@ -1,0 +1,286 @@
+html{
+    /* agar scroll bergerak secara halus */
+    scroll-behavior: smooth;
+}
+/* bagian navbar */
+/* navbar */
+.navbar{
+    background-color: #131313;
+    /* memberikan jarak navigasi dengan icon navigasi */
+    padding: 1rem 8rem;
+    z-index: 99;
+}
+
+/* memberi gambar */
+.navbar .navbar-brand{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+/* #navbarSupportedContent > ul > li:nth-child(4) > a */
+/* (4) adalah li ke empat */
+/* jika diganti menjadi (n), akan keseluruh childnya */
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: white;
+    font-size: 18px;
+    padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover, 
+#navbarSupportedContent > ul > li:nth-child(n) > a.active{
+    color: #00bf85 ;
+}
+
+#navbarSupportedContent > button{
+    background: #00bf85;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    color: black;
+}
+
+#navbarSupportedContent > button:hover{
+    color: white;
+}
+
+
+/* bagian video */
+
+.tengah{
+    /* overflow:hidden digunakan apabila ada objek yang melebihi batas akan dicrop */
+    overflow: hidden;
+    /* memberikan cover selebar 100% dan tinggi 100vh */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.tengah video{
+    width: 100%;
+    height: 100%;
+    /* dengan poinnter-events:none, elemen link tidak akan bereaksi */
+    pointer-events: none;
+    /* object-fitProperti CSS digunakan untuk menentukan bagaimana <img> atau <video> harus diubah ukurannya agar sesuai dengan penampungnya. */
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* transform: translate(-50%, -50%);  */
+    /*                       kesamping kiri 50%, keatas 50% */
+    transform: translate(-50%,-50%);
+}
+
+/* bagian awal konten class:tengah */
+.utama{
+    color: white;
+    position: relative;
+    /* text-align: center;
+    top: 150px; */
+}
+
+.tengah .utama p{
+    width: 55%;
+    font-size: 14px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom:20px
+}
+
+body > header > div > div > a{
+    background: #00bf85;
+    font-weight: 600;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+body > header > div > div > a:hover{
+    background-color: white;
+    text-decoration: none;
+}
+
+/* bagian akhir konten class:tengah */
+
+
+
+/* bagian about */
+.about{
+    background-color: black;
+    min-height: 760px;
+}
+
+.about .teks{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: auto;
+}
+
+.about .teks h6 {
+    color: #00bf7f;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.about .teks h2 {
+    color: #f7f5f4;
+    font-size: 2rem;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+}
+
+.about .teks p {
+    color: #f7f5f4;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body > section > div > div.teks.col-md-6.col-lg-6.pt-5.pb-5 > a{
+    background: #00bf85;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    color: black;   
+    text-decoration: none;
+}
+
+body > section > div > div.teks.col-md-6.col-lg-6.pt-5.pb-5 > a:hover{
+    color: white;
+}
+
+/* akhir about */
+
+/* bagian discover */
+.discover{
+    min-height: 750px;
+}
+
+section .row .teks2 h6{
+    color: #00bf7f;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+section .row .teks2 h2{
+    font-size: 2rem;
+    font-weight: 700;   
+}
+
+section .row .teks2 p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;   
+}
+
+section .row .teks2 a{
+    background: black;
+    font-weight: 500;
+    padding: 0.7rem 1.4rem;
+    border-radius: 30px;
+    color: white;   
+    text-decoration: none;
+}
+
+section .row .teks2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* bagian servis */
+.servis{
+    background-color: black;
+}
+
+.servis .bagian1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+}
+/* akhir servis */
+
+/* bagian sign up */
+.daftar{
+    min-height: 760px;
+}
+
+.daftar .teks{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: auto;
+}
+
+.daftar .teks h6 {
+    color: #00bf7f;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.daftar .teks h2 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+    /* letter-spacing: 1px; */
+}
+
+.daftar .teks p {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body > section.daftar.py-5.my-3 > div > div.teks.col-md-6.col-lg-6.pt-5.pb-5 > a{
+    background: black;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    color: white;   
+    text-decoration: none;
+    
+}
+
+body > section.daftar.py-5.my-3 > div > div.teks.col-md-6.col-lg-6.pt-5.pb-5 > a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* akhir sing up */
+
+/* awal footer */
+    footer{
+        background-color: black;
+        color: white;
+    }
+
+    body > footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(2) > a{
+        background: #00bf85;
+        font-weight: 600;
+        padding: 0.4rem 1.4rem;
+        border-radius: 30px;
+        color: black;
+          
+    }
+
+    body > footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(2) > a:hover{
+        color: white;
+    }
+/* akhir footer */
